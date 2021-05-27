@@ -1,8 +1,19 @@
 cmake_minimum_required(VERSION 3.15.0)
 project(CXXF CXX Fortran)
 
-find_package(hip REQUIRED)
+find_package(hip REQUIRED CONFIG
+	     PATHS "${CXXF_SOURCE_DIR}/cmake"
+	     NO_DEFAULT_PATH
+	     NO_PACKAGE_ROOT_PATH
+	     NO_CMAKE_PATH
+	     NO_CMAKE_ENVIRONMENT_PATH
+	     NO_SYSTEM_ENVIRONMENT_PATH
+	     NO_CMAKE_PACKAGE_REGISTRY
+	     NO_CMAKE_BUILDS_PATH
+	     NO_CMAKE_SYSTEM_PATH
+	     NO_CMAKE_SYSTEM_PACKAGE_REGISTRY
 
+)
 add_executable(hello_f hello.F90)
 add_executable(vectoradd_cpp vectoradd.cxx)
 
