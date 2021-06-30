@@ -2,6 +2,8 @@
 
 Re issue in:
 - https://github.com/ROCm-Developer-Tools/HIP/pull/2280
+- original PR (stalled): https://github.com/ROCm-Developer-Tools/HIP/pull/2190
+- original issues: https://github.com/ROCm-Developer-Tools/HIP/issues/2158 https://github.com/ROCm-Developer-Tools/HIP/issues/2275
 
 Build with:
 ```
