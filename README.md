@@ -21,3 +21,5 @@ gfortran: error: unrecognized command line option ‘--offload-arch=gfx900’; d
 gfortran: error: unrecognized command line option ‘--offload-arch=gfx906’; did you mean ‘--offload-abi=ilp32’?
 gfortran: error: unrecognized command line option ‘--offload-arch=gfx908’; did you mean ‘--offload-abi=ilp32’?
 ```
+
+... Should be fixed in ROCm 4.4+: https://github.com/ROCm-Developer-Tools/HIP/pull/2280#issuecomment-856138090
